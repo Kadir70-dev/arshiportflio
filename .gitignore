@@ -1,0 +1,75 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+build/
+dist/
+.cache/
+.temp/
+out/
+.next/
+.vercel/
+.netlify/
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+*.log.*
+log.txt
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# OS generated files
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# React specific
+*.env.local
+.env.*
+!.env.example
+
+# Backup files
+*.orig
+*.bak
+
+# # Uploaded media (optional — comment this out if you want uploads tracked)
+# uploads/
+# public/images/
+# !public/images/arshi.jpeg
+
+# # Optional: Ignore frontend build when pushing backend only
+# frontend/build/
+# frontend/dist/
