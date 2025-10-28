@@ -5,7 +5,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Hero() {
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -32,7 +32,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-5xl md:text-7xl text-slate-900 mb-4"
+          className="text-5xl md:text-7xl text-slate-900 mb-4 font-bold"
         >
           Arshiya Shaikh
         </motion.h1>
@@ -57,13 +57,22 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8"
         >
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-slate-800 to-slate-900 hover:from-slate-900 hover:to-slate-950 text-white rounded-full px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300"
+          {/* ✅ Download Resume Button */}
+          <a
+            href="/Arshiya%20Shaik%20-%20Business%20Op%20Manager.pdf"
+            download="Arshiya Shaik - Business Op Manager.pdf"
+            className="inline-block"
           >
-            <Download className="mr-2 h-5 w-5" />
-            Download Resume
-          </Button>
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-slate-800 to-slate-900 hover:from-slate-900 hover:to-slate-950 text-white rounded-full px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <Download className="mr-2 h-5 w-5" />
+              Download Resume
+            </Button>
+          </a>
+
+          {/* ✅ Contact Me Button */}
           <Button
             size="lg"
             variant="outline"
