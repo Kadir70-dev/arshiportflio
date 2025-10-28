@@ -64,6 +64,7 @@ export function Education() {
                         <Calendar className="h-4 w-4" />
                         <span>{edu.years}</span>
                       </div>
+                      
                       <div className="flex items-center gap-2">
                         <MapPin className="h-4 w-4" />
                         <span>{edu.location}</span>
